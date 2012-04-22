@@ -16,60 +16,56 @@
             <li>git clone ~/existing/repo ~/new/repo</li>
             </ul>
         </p>
-        <p>add</p>
-        git-add - 索引(index)にファイルの内容を追加する 
-        <p>rm</p>
-        <p>ワーキング ツリーとインデックスからファイルを消します．</p>
+        <p>add: git-add - 索引(index)にファイルの内容を追加する</p>
+        <p>rm: ワーキング ツリーとインデックスからファイルを消します．</p>
         <p>commit: インデックスの変更をリポジトリにコミットする</p>
             <ul>
             <li>git commit</li>
             </ul>
-        <p>merge</p>
+        <p>merge: 現在のbranchに &lt;otherbranch&gt;をマージする</p>
         <ul>
             <li>git merge &lt;otherbranch&gt; : 現在のbranchに &lt;otherbranch&gt;をマージする </li>
             <li>git merge &lt;otherbranch&gt; --squash : コミットを1つに固める。コミットメッセージは最新のが使われる </li>
             <li>git merge &lt;otherbranch&gt; --squash --no-commit : コミットを1つに固める。コミットメッセージは後でcommitした時に決める </li>
         </ul>
-        <p>update</p>
-        <p>pull</p>
-        <p>他のリポジトリまたはローカル ブランチから取得しマージします．</p>
+        <p>pull: 他のリポジトリまたはローカル ブランチから取得しマージします．</p>
         <p>push: 公開リポジトリに自分のリポジトリの内容を送信する</p>
         <p>status: 変更が加えられたファイルを表示する</p>
         <ul>
         <li>git status</li>
         </ul>
         <p>revert: すでに存在しているコミットを打ち消すコミットを作成する．</p>
-        <p>branch</p>
+        <p>branch: HEADから&lt;newbranch&gt;を作る</p>
         <ul>
             <li>git branch &lt;newbranch&gt; : HEADから&lt;newbranch&gt;を作る</li>
             <li>git branch &lt;newbranch&gt; &lt;oldbranch&gt; : &lt;oldbranch&gt;から&lt;newbranch&gt;を作る</li>
             <li>git branch -m &lt;oldbranch&gt; &lt;newbranch&gt; : branch名を変える</li>
             <li>git branch -d &lt;branch&gt; : branchを削除する</li>
         </ul>
-        <p>rebase</p>
+        <p>rebase: ブランチの派生元を変更する</p>
         <ul>
             <li>git rebase &lt;upstream&gt; : &lt;upstream&gt;に枝を繋ぎ直す</li>
             <li>git rebase -i &lt;upstream&gt; : interactive（対話モード）。&lt;upstream&gt; 〜 HEADまでを歴史改変する(&lt;upstream&gt;は含まない)</li>
             <li>git rebase --continue : rebaseを再開する</li>
             <li>git rebase --abort : rebaseを中断する</li>
         </ul>
-        <p>log</p>
+        <p>log: コミットログを見る</p>
         <ul>
             <li>git log : コミットログを見る</li>
             <li>git log -- &lt;some/file/path&gt; : 特定のファイルのコミットログを見る</li>
         </ul>
-        <p>cherry-pick</p>
+        <p>cherry-pick: 別のブランチのコミットの変更内容を現在のブランチに取り込む</p>
         <ul>
             <li>git cherry-pick &lt;commit&gt; : 別のブランチのコミットの変更内容を現在のブランチに取り込む</li>
         </ul>
-        <p>fetch</p>
+        <p>fetch: 他のリポジトリから変更を取得する</p>
         <ul>
             <li>git fetch : 他のリポジトリから変更を取得する</li>
             <li>git fetch --all : 全てのリポジトリから変更を取得する</li>
         </ul>
         <h2>単語</h2>
         <p>revision: Gitでは特定のコミットはハッシュ値(SHA-1)が使われる</p>
-        <p>branch : コミットのつながり</p>
+        <p>branch: コミットのつながり</p>
 
         <p>workspace</p>
     </body>

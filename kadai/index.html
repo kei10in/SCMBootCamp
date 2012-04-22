@@ -40,6 +40,13 @@
             <li>git branch -m &lt;oldbranch&gt; &lt;newbranch&gt; : branch名を変える</li>
             <li>git branch -d &lt;branch&gt; : branchを削除する</li>
         </ul>
+        <p>rebase</p>
+        <ul>
+            <li>git rebase &lt;upstream&gt; : &lt;upstream&gt;に枝を繋ぎ直す</li>
+            <li>git rebase -i &lt;upstream&gt; : interactive（対話モード）。&lt;upstream&gt; 〜 HEADまでを歴史改変する(&lt;upstream&gt;は含まない)</li>
+            <li>git rebase --continue : rebaseを再開する</li>
+            <li>git rebase --abort : rebaseを中断する</li>
+        </ul>
         <h2>単語</h2>
         <p>revision</p>
         <p>branch : コミットのつながり</p>

@@ -69,6 +69,19 @@
         <li>git config --global alias.ci commit：commit コマンドを ci で使えるようにする</li>
         <li>git config --global alias.st status：status コマンドを st で使えるようにする</li>
         </ul>
+
+        <h3>submodule: 外部リポジトリを扱えるようにする．</h3>
+
+        <p>外部リポジトリは，取り込んでいる外部リポジトリのリビジョンとともに保持される．
+          外部リポジトリの使いたいリビジョンをサブモジュールとして使うことができる．</p>
+
+        <ul>
+          <li>git submodule add: 外部 Git リポジトリをサブモジュールとして取り込む．</li>
+          <li>git submodule init: 追加されている外部モジュールを初期化する．
+          <li>git submodule update: 初期化された外部モジュールを取得する．
+          <li>参考: <a href="http://d.hatena.ne.jp/mzp/20080508/git">http://d.hatena.ne.jp/mzp/20080508/git</a></li>
+        </ul>
+
         <h2>単語</h2>
         <h3>revision: Gitでは特定のコミットはハッシュ値(SHA-1)が使われる</h3>
         <h3>branch: コミットのつながり</h3>
